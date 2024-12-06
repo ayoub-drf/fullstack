@@ -1,0 +1,49 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    border-bottom: 1px solid #2196F3;
+}
+
+.active {
+    color: #2196F3;
+}
+
+nav .logo a {
+    font-size: 33px;
+    color: #2196F3;
+    font-weight: bold;
+}
+
+nav .links {
+    display: flex;
+    align-items: center;
+}
+
+nav .links .link {
+    margin: 0 15px;
+}
+nav .links .link a {
+    display: flex;
+    font-size: 33px !important;
+}
+nav .links .link a p {
+    font-size: 26px;
+}
+nav .links .link a svg {
+    font-size: 26px;
+    margin-left: 20px;
+}
+
+nav .links .link img {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+
+nav .links button {
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 10px;
+}
