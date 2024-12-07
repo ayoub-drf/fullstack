@@ -49,4 +49,6 @@ class ProfileSerializer(serializers.ModelSerializer):
     def get_profile_posts(self, user):
         posts = user.posts.all()
         serializers = PostSerializer(posts, many=True)
+        for i in serializers.data:
+            del i['author']
         return serializers.data

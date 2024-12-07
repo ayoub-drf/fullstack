@@ -154,5 +154,6 @@ def update_profile_view(request, username=None):
 @permission_classes([IsAuthenticated, ])
 def get_username_view(request):
     username = request.user.username
+    id = request.user.id
 
-    return Response({"username": username}, HTTP_200_OK)
+    return Response({"username": username, "id": id}, HTTP_200_OK)

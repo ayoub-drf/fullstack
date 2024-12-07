@@ -25,10 +25,15 @@ const Navbar = ({ isAuthenticated, username,  setIsAuthenticated }) => {
             Home
             </a>
           </li>
+          <li className="link">
+            <a href="/posts/create-post/">
+              Create Post
+            </a>
+          </li>
           {isAuthenticated ? (
             <>
               <li className="link">
-                <a href="/register/">
+                <a href={`user/profile/${username}/`}>
                   {username}
                 </a>
               </li>

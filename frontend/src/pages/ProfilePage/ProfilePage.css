@@ -1,0 +1,14 @@
+.profile {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.profile img {
+    width: 200px;
+}
+.profile p {
+    font-size: 30px;
+    margin: 10px 0 0 0;
+    font-weight: bold;
+}

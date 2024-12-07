@@ -5,8 +5,9 @@ import { ACCESS_TOKEN, REFRESH_TOKEN } from "../../utils/constants";
 import { useNavigate } from "react-router-dom";
 import api from "../../api";
 import { ToastContainer, toast } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
+import "react-toastify/ReactToastify.css";
 import Loader from "../../components/Loader/Loader";
+
 
 
 
@@ -27,7 +28,7 @@ const LoginPage = ({ setIsAuthenticated, }) => {
       navigator("/")
       setIsAuthenticated(true)
     } catch (error) {
-      console.log(error.message)
+      toast(error.response.data.detail);
     } finally {
       setIsLoading(false)
     }
