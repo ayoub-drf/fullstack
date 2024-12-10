@@ -28,7 +28,7 @@ const App = () => {
       setIsAuthenticated(true)
       return res.data
     } catch (error) {
-      // navigate("/login/")
+      navigate("/login/")
       console.log("getUsername Error", error.message)
     } finally {
       setIsLoading(false)

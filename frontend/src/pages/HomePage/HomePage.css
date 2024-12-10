@@ -6,3 +6,19 @@
     gap: 20px;
     justify-content: center;
 }
+.paginator {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.paginator button {
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: #2196F3;
+    color: white;
+    font-weight: bold;
+    margin: 0 10px;
+}
+.paginator button:disabled {
+    opacity: .4;
+}

@@ -16,7 +16,7 @@ const Card = ({ elements }) => {
         <div className="author">
           <a href={`/user/profile/${elements.author.username}/`} >creator: {elements.author.username}</a>
         </div>
-      ) : <div className="author"></div>}
+      ) : <div className="author">creator: <a href="/">Unknown</a></div>}
     </div>
   );
 };
